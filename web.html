@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>DEMO WEB</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+		<style>
+		*{
+			margin:0px;
+			padding:0px;
+			box-sizing:border-box;
+		}
+		body{
+			
+		}
+		h1{
+			padding-top:20px;
+			color:white;
+			text-shadow:5px 5px 15px rgba(0,0,0,0.4);
+			text-align:center;
+		}
+		.grid{
+			padding-top:30px;
+			align-item:center;
+		}
+		.grid img{
+			width:300px;
+			height:400px;
+			box-shadow:5px 5px 15px -5px rgba(0,0,0,0.3);
+		}
+		.grid p{
+			padding:auto;
+			color:white;
+			width:300px;
+			height:40px;
+			box-shadow:5px 5px 15px -5px black;
+			background-color:rgba(0,0,0,0.5);
+			text-align:center;
+		}
+		.carousel{
+			
+			align-item:center;
+			padding-left:50px;
+			padding-right:50px;
+		}
+		.carousel img {
+			width:500px;
+			height:400px;
+		}
+		</style>
+	</head>
+	<body>
+	<!--*********************NAVBAR****************************-->
+		<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+		  <a class="navbar-brand" href="#"></a>
+		  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		  </button>
+
+		  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+			<ul class="navbar-nav mr-auto">
+			  <li class="nav-item active">
+				<a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+			  </li>
+			  <li class="nav-item">
+				<a class="nav-link" href="#"><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bootstrap" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+  <path fill-rule="evenodd" d="M12 1H4a3 3 0 0 0-3 3v8a3 3 0 0 0 3 3h8a3 3 0 0 0 3-3V4a3 3 0 0 0-3-3zM4 0a4 4 0 0 0-4 4v8a4 4 0 0 0 4 4h8a4 4 0 0 0 4-4V4a4 4 0 0 0-4-4H4z"/>
+  <path fill-rule="evenodd" d="M8.537 12H5.062V3.545h3.399c1.587 0 2.543.809 2.543 2.11 0 .884-.65 1.675-1.483 1.816v.1c1.143.117 1.904.931 1.904 2.033 0 1.488-1.084 2.396-2.888 2.396zM6.375 4.658v2.467h1.558c1.16 0 1.764-.428 1.764-1.23 0-.78-.569-1.237-1.541-1.237H6.375zm1.898 6.229H6.375V8.162h1.822c1.236 0 1.887.463 1.887 1.348 0 .896-.627 1.377-1.811 1.377z"/>
+</svg></a>
+			  </li>
+			  <li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+				  Dropdown
+				</a>
+				<div class="dropdown-menu" aria-labelledby="navbarDropdown">
+				  <a class="dropdown-item" href="#">About Us</a>
+				  <a class="dropdown-item" href="#">Services</a>
+				  <div class="dropdown-divider"></div>
+				  <a class="dropdown-item" href="#">Contact Us</a>
+				</div>
+			  </li>
+			  
+			</ul>
+			<form class="form-inline my-2 my-lg-0">
+			  <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+			  <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+			</form>
+		  </div>
+		</nav>
+		
+		<!--*********************HEAD TEXT****************************-->
+		<div class="head_text">
+			<h1>Demo Website</h1>
+		</div>
+		
+		
+		<!--**********************GRID LAYOUT**************************-->
+		<div class="grid">
+			<div class="container">
+			  <div class="row">
+				<div class="col-sm">
+				  <img src="https://picsum.photos/200/300">
+				  <p>image 1</p>
+				</div>
+				<div class="col-sm">
+				  <img src="https://picsum.photos/200/301">
+				  <p>image 2</p>
+				</div>
+				<div class="col-sm">
+				  <img src="https://picsum.photos/200/302">
+				  <p>image 3</p>
+				</div>
+			  </div>
+			</div>
+		</div>
+		
+		<!--**********************ABOUT US**************************-->
+		
+		<h1>ABOUT US </h1>
+		
+		<div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+			  <div class="carousel-inner">
+				<div class="carousel-item active" data-interval="2000">
+				  <img src="https://picsum.photos/200/305" class="d-block w-100" alt="...">
+				  <div class="carousel-caption d-none d-md-block">
+        <h5>Service 1</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+				</div>
+				<div class="carousel-item" data-interval="2000">
+				  <img src="https://picsum.photos/200/303" class="d-block w-100" alt="...">
+				  <div class="carousel-caption d-none d-md-block">
+        <h5>Service 2</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+				</div>
+				<div class="carousel-item" data-interval="2000">
+				  <img src="https://picsum.photos/200/304" class="d-block w-100" alt="...">
+				  <div class="carousel-caption d-none d-md-block">
+        <h5>Service 3</h5>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      </div>
+				</div>
+			  </div>
+			  <a class="carousel-control-prev" href="#carouselExampleInterval" role="button" data-slide="prev">
+				<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			  </a>
+			  <a class="carousel-control-next" href="#carouselExampleInterval" role="button" data-slide="next">
+				<span class="carousel-control-next-icon" aria-hidden="true"></span>
+				<span class="sr-only">Next</span>
+			  </a>
+			</div>
+				
+		
+		<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+	</body>
+</html>
